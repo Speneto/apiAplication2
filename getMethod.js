@@ -16,6 +16,8 @@ rl.question('Enter your Github UserName ? ', (username) => {
          }
      request.get(options, function (error, response, body) {
      if (!error && response.statusCode == 200) {
+       console.log();
+       console.log("Printing Basic Information About User-Name Supplied :" +"\n")
          console.log(JSON.parse(response.body), url);
      }
 
